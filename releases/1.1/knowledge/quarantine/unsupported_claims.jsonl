@@ -1,0 +1,13 @@
+{"id": "M01", "claim": "LP烧掉就不会rug", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K014", "K001"], "reviewed_at": "2026-10-13"}
+{"id": "M02", "claim": "聪明钱多必然上涨", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K016", "K027"], "reviewed_at": "2026-10-13"}
+{"id": "M03", "claim": "成交笔数增加就是净资金流入", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K010", "K017"], "reviewed_at": "2026-10-13"}
+{"id": "M04", "claim": "固定某个止盈止损百分比适合所有新币", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K022"], "reviewed_at": "2026-10-13"}
+{"id": "M05", "claim": "毕业概率高就是净盈利概率高", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K012"], "reviewed_at": "2026-10-13"}
+{"id": "M06", "claim": "晒100倍截图证明方法稳定", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K018", "K020", "K027"], "reviewed_at": "2026-10-13"}
+{"id": "M07", "claim": "回测最优参数就是成熟策略", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K013", "K030"], "reviewed_at": "2026-10-13"}
+{"id": "M08", "claim": "模拟触价可以按该价无限成交", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K006", "K023"], "reviewed_at": "2026-10-13"}
+{"id": "M09", "claim": "API报价成功说明随时能卖", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K007", "K024"], "reviewed_at": "2026-10-13"}
+{"id": "M10", "claim": "样本数等于快照行数", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K021"], "reviewed_at": "2026-10-13"}
+{"id": "M11", "claim": "模型联网学习后即可跳过验证", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K028", "K030"], "reviewed_at": "2026-10-13"}
+{"id": "M12", "claim": "当前高价是已经实现的盈利", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K032"], "reviewed_at": "2026-10-13"}
+{"id": "M13", "claim": "Solana税率空字符串说明交易成本为零", "verdict": "无此证据，不能作为已成立规则", "knowledge_ids": ["K003", "K041", "K042"], "reviewed_at": "2026-10-14"}

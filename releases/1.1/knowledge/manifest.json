@@ -1,0 +1,28 @@
+{
+  "name": "MEME Knowledge Base",
+  "version": "1.1",
+  "review_date": "2026-10-14",
+  "timezone": "Asia/Shanghai",
+  "scope": "Solana first + event research",
+  "strategy_validation": "none",
+  "sha256": {
+    "CHANGELOG.md": "ed1ca4ac2be0072a5be23e6cb10c6f1bbae7fd6678c4d11b959466eb2cdcf26a",
+    "GUIDE.md": "907dd4bbdfbb33b04f44f123e8127e4e67c3d227c3436ed8203c07deb6bcdab7",
+    "README.md": "37148a00772c08df425b5a7daed8e0056198eff1f0af7715efc4978403af2c58",
+    "UPDATE_PROTOCOL.md": "2b95df842ecbbd3e468895d36fb301fd3b0312053a73746c682f4d4d22e9818b",
+    "eval/cases.jsonl": "f3a39881cb527d82dc1acba7b76317c7e1bbdac3ba3e96bd3238694516678a5b",
+    "quarantine/unsupported_claims.jsonl": "96a24d8f5be90ff8b1a70c7b0c77039215a13673d87044155b125588bfdf3657",
+    "hypotheses/experiment_specs.jsonl": "7f96c751f2e421bcff8c4808618534964a9b3f352afd50a61c62ddffad082f32",
+    "core/knowledge_cards.jsonl": "4582eeb8c21cc589cb9930f1a2274885a4018cfae6baa4b57911c4dc837b6c37",
+    "prompts/research_agent_zh.txt": "5a3c169f2f88553c5d3e077cbeb17e45f687364b4a3c34462a3c4c4add3c305f",
+    "evidence/source_registry.json": "17a0b4e259cfb1ad88c024a211828533725f42c974edb880a9df65cac6db7bb1",
+    "evidence/discovery_queue.json": "e2f09dcba22121f8648aa876dff84368f971442a0ba2a54a7ff102ea7cbb51ec",
+    "schemas/knowledge_card.schema.json": "fa9f7721505f5e01d2698b78d4de7d8a5189c57a1c08056f9bb53bea7678ea9a",
+    "history/card_versions.jsonl": "6fb581f0100a83713741709c064737c446994079d46578e947e14a319cf1e9b1",
+    "integration/event_contract.json": "9733a7903f412138db5c409477cec211e1a8a356478c55615644157f53a342a5",
+    "integration/CAPABILITY_BACKLOG.md": "d35729d655d4ef92984ded82e4471e1b5d2773bf0e194b1cd4d5f5aff1297396",
+    "integration/feature_contract.json": "d8d5aaef4f76d21a9d146596ad1daa4abd83d5342d565ad278e99f380c4e4483",
+    "integration/AGENT_PLAN.md": "3c9e8166089a440c60d635ea1528c7431d5be58fce27af329e2e3c071155d11f"
+  },
+  "delivery_scope": "data_only_no_program_updates"
+}
