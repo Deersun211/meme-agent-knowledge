@@ -1,0 +1,56 @@
+{
+  "version": "1.3",
+  "scope": "建议字段契约；本知识更新不修改或确认本机接入状态",
+  "required": [
+    "chain",
+    "mint",
+    "source",
+    "source_event_time",
+    "observed_at",
+    "schema_version",
+    "decision_id"
+  ],
+  "units": {
+    "amount_raw": "integer string + decimals + mint",
+    "price": "quote amount per base token + quote_mint",
+    "slippage": "bps",
+    "ratio": "明确0..1或0..100，不可混用"
+  },
+  "missing": "null + missing_reason；禁止用0代替未知",
+  "candidate_log": [
+    "discovered_at",
+    "accepted_or_rejected",
+    "reason_codes",
+    "rule_version"
+  ],
+  "execution_log": [
+    "quote_time",
+    "planned_amount",
+    "simulated_fill_time",
+    "simulated_price",
+    "cost_items",
+    "exit_status",
+    "realized_pnl",
+    "unrealized_pnl",
+    "valuation_method"
+  ],
+  "no_private_material": "不得包含私钥、助记词、API key",
+  "fee_fields": {
+    "raw_buy_tax": "原值不覆盖",
+    "raw_sell_tax": "原值不覆盖",
+    "fee_status": "unknown/reported/chain_verified，链上无此扩展也不代表路由零费用",
+    "parse_status": "valid/invalid/missing_optional",
+    "state_observed_at": "首次读取时间",
+    "context_slot": "RPC返回slot",
+    "fee_in_quote": "费用明细是否已包含，不确定仍unknown"
+  },
+  "replay_diagnostics": {
+    "path_resolution": "原始逐笔/快照/OHLC及时间粒度",
+    "ambiguous_path": "true/false/unknown + reason",
+    "scenario_id": "已冻结的路径及成交假设版本",
+    "signal_available_at": "首次可见并完成计算的时间，不是蜡烛开始时间",
+    "feature_cutoff_at": "仅使用此时已可见的数据",
+    "branch_coverage": "分支触发数/核验数/未核验原因",
+    "engine_version": "引擎/依赖/规则版本与数据批次哈希"
+  }
+}
