@@ -1,0 +1,29 @@
+{
+  "name": "MEME Knowledge Base",
+  "version": "1.4",
+  "review_date": "2026-10-17",
+  "timezone": "Asia/Shanghai",
+  "scope": "Solana first + event research",
+  "strategy_validation": "none",
+  "delivery_scope": "data_only_no_program_updates",
+  "sha256": {
+    "CHANGELOG.md": "fab441f293b3d9a205997cc87a398fb283982b8665157bf377533ae6a5bc015c",
+    "GUIDE.md": "907dd4bbdfbb33b04f44f123e8127e4e67c3d227c3436ed8203c07deb6bcdab7",
+    "README.md": "66ca54906f5a8f4935d2adee662d962ab3702e3d343f2446e6c6007895bed228",
+    "UPDATE_PROTOCOL.md": "2b95df842ecbbd3e468895d36fb301fd3b0312053a73746c682f4d4d22e9818b",
+    "core/knowledge_cards.jsonl": "07597926df68e9cb4b53a08d7404fdb0e2ce93fa007d6cc0af56ae2fed0e564d",
+    "eval/cases.jsonl": "eee4a64999579590a2faf2143cdc4c5c271aed29551a5d929efd76056cebbf25",
+    "evidence/discovery_queue.json": "e2f09dcba22121f8648aa876dff84368f971442a0ba2a54a7ff102ea7cbb51ec",
+    "evidence/source_registry.json": "228b030ac7792c05114093d024c95abc86c5258c6fa23d6e9d9d1f8940ce2201",
+    "history/card_versions.jsonl": "3de84834bd4e7b8e8baaeb1fdaa0a1b8b1a71b1fa18adeca38acd375d6abe60d",
+    "hypotheses/experiment_specs.jsonl": "14a0f670097ae8f42da4451f56d829f6da764eeb31a4d6127d60d72cd1ac6882",
+    "integration/AGENT_PLAN.md": "3c9e8166089a440c60d635ea1528c7431d5be58fce27af329e2e3c071155d11f",
+    "integration/BACKTEST_REUSE_REVIEW.md": "7304faac64468d64d501e65a38e5544d257b47ad75e061fca13cb7934703ad2a",
+    "integration/CAPABILITY_BACKLOG.md": "5d05d67932d18e9632fc7a61c0c14b993a39994f9842f21ce0a3e11ab8803f7d",
+    "integration/event_contract.json": "9733a7903f412138db5c409477cec211e1a8a356478c55615644157f53a342a5",
+    "integration/feature_contract.json": "ea050ffaa6a96394c9597d3ea5a88ec864c1be009c95e9f44d266ffb1e0ff3c2",
+    "prompts/research_agent_zh.txt": "5a3c169f2f88553c5d3e077cbeb17e45f687364b4a3c34462a3c4c4add3c305f",
+    "quarantine/unsupported_claims.jsonl": "996fb60611f43a92c319ca7d06fee3407a6cd8e6bb478fd966b2c7cf4ce5530f",
+    "schemas/knowledge_card.schema.json": "fa9f7721505f5e01d2698b78d4de7d8a5189c57a1c08056f9bb53bea7678ea9a"
+  }
+}
