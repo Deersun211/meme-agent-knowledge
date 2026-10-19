@@ -1,0 +1,30 @@
+{
+  "name": "MEME Knowledge Base",
+  "version": "1.6",
+  "review_date": "2026-10-19",
+  "timezone": "Asia/Shanghai",
+  "scope": "Solana first + event research",
+  "strategy_validation": "none",
+  "delivery_scope": "data_only_no_program_updates",
+  "sha256": {
+    "CHANGELOG.md": "8ae332f016a7cc3e88e7f7e595e83daffdf90fc7964412062b0dcb3d014acbdf",
+    "GUIDE.md": "907dd4bbdfbb33b04f44f123e8127e4e67c3d227c3436ed8203c07deb6bcdab7",
+    "README.md": "5995a696d8bb8e11f4011baa1069d4832b94d3d9dde23992014326f9d6968a56",
+    "UPDATE_PROTOCOL.md": "2b95df842ecbbd3e468895d36fb301fd3b0312053a73746c682f4d4d22e9818b",
+    "core/knowledge_cards.jsonl": "e11f1715aa40fe26f75d86f2a148a5aac15bc820988d9f626bfc321e21019a31",
+    "eval/cases.jsonl": "6f69a2356dd3de9e974103dd553279ad54cc3fc480d4975cd48d4a318d5ab11a",
+    "evidence/discovery_queue.json": "32c14581397e9f5bd88409be758e14ca8f53c9e54d9c09d33a68f8d5d067dea8",
+    "evidence/source_registry.json": "1f8173da361e612493e4d3cdafa22d9d3eddd558c18a0e4ebc1d6e4c99b16b7b",
+    "history/card_versions.jsonl": "3de84834bd4e7b8e8baaeb1fdaa0a1b8b1a71b1fa18adeca38acd375d6abe60d",
+    "hypotheses/experiment_specs.jsonl": "94ae3e5fc0c19f2a1b56fefdd101b12fb49974d6a0e6f2b676c1769d5d11f944",
+    "integration/AGENT_PLAN.md": "3c9e8166089a440c60d635ea1528c7431d5be58fce27af329e2e3c071155d11f",
+    "integration/BACKTEST_REUSE_REVIEW.md": "7304faac64468d64d501e65a38e5544d257b47ad75e061fca13cb7934703ad2a",
+    "integration/CAPABILITY_BACKLOG.md": "94d8b3e215061ab6c7d3be6e35a479569f9c16e62037a6bb219109d958158bdf",
+    "integration/WASH_RESEARCH_REUSE.md": "bc4036d56b00d8241bc6496976b3509090a778bc4fba9eeb790d7a94586df58a",
+    "integration/event_contract.json": "9733a7903f412138db5c409477cec211e1a8a356478c55615644157f53a342a5",
+    "integration/feature_contract.json": "52079775de75bc4de33d06f9075dd6501e607bb749e3009caa549f60f4894196",
+    "prompts/research_agent_zh.txt": "5a3c169f2f88553c5d3e077cbeb17e45f687364b4a3c34462a3c4c4add3c305f",
+    "quarantine/unsupported_claims.jsonl": "1dcf43e3679a073901f7041643867133f0fb29abddd8271d0e18ee52b31d2935",
+    "schemas/knowledge_card.schema.json": "fa9f7721505f5e01d2698b78d4de7d8a5189c57a1c08056f9bb53bea7678ea9a"
+  }
+}
