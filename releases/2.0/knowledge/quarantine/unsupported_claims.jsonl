@@ -1,0 +1,22 @@
+{"id": "M01", "claim": "LP烧掉就不会rug", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K014", "K001"], "reviewed_at": "2026-10-13"}
+{"id": "M02", "claim": "聪明钱多必然上涨", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K016", "K027"], "reviewed_at": "2026-10-13"}
+{"id": "M03", "claim": "成交笔数增加就是净资金流入", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K010", "K017"], "reviewed_at": "2026-10-13"}
+{"id": "M04", "claim": "固定某个止盈止损百分比适合所有新币", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K022"], "reviewed_at": "2026-10-13"}
+{"id": "M05", "claim": "毕业概率高就是净盈利概率高", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K012"], "reviewed_at": "2026-10-13"}
+{"id": "M06", "claim": "晒100倍截图证明方法稳定", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K018", "K020", "K027"], "reviewed_at": "2026-10-13"}
+{"id": "M07", "claim": "回测最优参数就是成熟策略", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K013", "K030"], "reviewed_at": "2026-10-13"}
+{"id": "M08", "claim": "模拟触价可以按该价无限成交", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K006", "K023"], "reviewed_at": "2026-10-13"}
+{"id": "M09", "claim": "API报价成功说明随时能卖", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K007", "K024"], "reviewed_at": "2026-10-13"}
+{"id": "M10", "claim": "样本数等于快照行数", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K021"], "reviewed_at": "2026-10-13"}
+{"id": "M11", "claim": "模型联网学习后即可跳过验证", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K028", "K030"], "reviewed_at": "2026-10-13"}
+{"id": "M12", "claim": "当前高价是已经实现的盈利", "verdict": "不得作为成立规则；可能存在特定例子，不支持普适断言", "knowledge_ids": ["K032"], "reviewed_at": "2026-10-13"}
+{"id": "M13", "claim": "Solana税率空字符串说明交易成本为零", "verdict": "无此证据，不能作为已成立规则", "knowledge_ids": ["K003", "K041", "K042"], "reviewed_at": "2026-10-14"}
+{"id": "M14", "claim": "Dune公开文档意味着免费免密实时全量样本，逐跳表每行都是独立买入。", "reason": "公开说明不等于API授权或免费可用；路由粒度、覆盖与数据时效均有边界。", "knowledge_ids": ["K044", "K045", "K046"], "status": "unsupported"}
+{"id": "M15", "claim": "成熟开源回测引擎盈利且前视检测通过，就可直接作为Solana新币可执行盈利证据。", "reason": "撮合与路径假设未核实、数据覆盖与容量不同、诊断有漏检/误报边界。", "knowledge_ids": ["K023", "K047", "K048"], "status": "unsupported"}
+{"id": "M16", "claim": "高TVL或小额模拟盈利足以证明更大仓位仍可按相同收益率退出。", "reason": "交易金额、池型、活跃深度、费用与未来退出状态有区别；不能线性外推。", "knowledge_ids": ["K006", "K049", "K050"], "status": "unsupported"}
+{"id": "M17", "claim": "代币账户Top20等于独立大户Top20；排除全部PDA后即可证明无集中操纵。", "reason": "账户与控制权限粒度不同、结果截断、协议归因需证据，不能由地址类型判定最终受益人或操纵。", "knowledge_ids": ["K051", "K052"], "status": "unsupported"}
+{"id": "M18", "claim": "成交量高就是新增买盘；快速往返或共享AMM池即可证明刷量；历史LOB检测代码可直接验证Solana策略。", "reason": "成交口径、对手结构、时序与域外适配不同，疑似行为不证明意图或盈利。", "knowledge_ids": ["K053", "K054"], "status": "unsupported"}
+{"id": "M19", "claim": "日志提及swap就是成功买入；RPC空值就是失败；最终成功可回填最初信号。", "reason": "局部调用、整体执行、数据可用性与确认时序是不同证据，不能互相替代。", "knowledge_ids": ["K055", "K056"], "status": "unsupported"}
+{"id":"M20","claim":"提高优先费或支付Jito最低小费就必定成交；返回签名或bundle_id即可记为买入；实际CU较低会自动只按实际CU支付。","reason":"费用、提交回执、调度和链上兑换是不同证据；legacy/v0优先费按请求预算计算，最低小费与接收回执均不保证落链。","knowledge_ids":["K055","K057","K058"],"status":"unsupported"}
+{"id":"M21","claim":"单一地址RPC翻到空页就是全市场无更早交易；节点最早可用slot足以证明历史完整；blockTime就是信号首次可见时间。","reason":"地址索引口径、分页状态、节点保留、方法支持和实时可见时间是不同问题，需覆盖账本与探针验证。","knowledge_ids":["K019","K059","K060"],"status":"unsupported"}
+{"id":"M22","claim":"报价outAmount就是可实现成交；priceImpactPct和slippageBps都应再次当手续费扣除；提高滑点容忍等于获得更好成交。","reason":"报价、阈值、冲击、费用和实际输出是不同字段/阶段；更宽阈值只是容许更差结果，不保证落链或改善价格。","knowledge_ids":["K007","K008","K061"],"status":"unsupported"}
