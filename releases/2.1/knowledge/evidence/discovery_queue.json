@@ -1,0 +1,19 @@
+[
+  {
+    "url": "https://arxiv.org/abs/2608.20271",
+    "title": "Catching the Rug: Early Prediction of Fraudulent Memecoins on Solana via Machine Learning",
+    "status": "search_discovered_direct_open_failed",
+    "next_step": "取得正文，审阅标签、时间划分、发行者分组、域外验证；当前不入事实卡"
+  },
+  {
+    "topic": "X/YouTube具体新币交易经验",
+    "status": "not_admitted",
+    "next_step": "定位原帖/原视频与完整策略、成本和失败记录；只做候选假设，不因盈利截图入库"
+  },
+  {
+    "topic": "LOB洗量研究的数据/代码复用许可与抽样",
+    "url": "https://zenodo.org/records/4540223",
+    "status": "metadata_reviewed_not_downloaded_license_unverified",
+    "next_step": "核实数据与代码各自许可证；3.2GB数据先规划资源并校验文件，README描述需要32GB RAM或足够swap是作者环境说明非实测。只复现小样，不套Solana标签。"
+  }
+]
