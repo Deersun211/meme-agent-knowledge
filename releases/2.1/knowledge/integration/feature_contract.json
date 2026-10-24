@@ -1,0 +1,133 @@
+{
+  "version": "2.1",
+  "scope": "建议字段契约；本知识更新不修改或确认本机接入状态",
+  "required": [
+    "chain",
+    "mint",
+    "source",
+    "source_event_time",
+    "observed_at",
+    "schema_version",
+    "decision_id"
+  ],
+  "units": {
+    "amount_raw": "integer string + decimals + mint",
+    "price": "quote amount per base token + quote_mint",
+    "slippage": "bps",
+    "ratio": "明确0..1或0..100，不可混用"
+  },
+  "missing": "null + missing_reason；禁止用0代替未知",
+  "candidate_log": [
+    "discovered_at",
+    "accepted_or_rejected",
+    "reason_codes",
+    "rule_version"
+  ],
+  "execution_log": [
+    "quote_time",
+    "planned_amount",
+    "simulated_fill_time",
+    "simulated_price",
+    "cost_items",
+    "exit_status",
+    "realized_pnl",
+    "unrealized_pnl",
+    "valuation_method"
+  ],
+  "no_private_material": "不得包含私钥、助记词、API key",
+  "fee_fields": {
+    "raw_buy_tax": "原值不覆盖",
+    "raw_sell_tax": "原值不覆盖",
+    "fee_status": "unknown/reported/chain_verified，链上无此扩展也不代表路由零费用",
+    "parse_status": "valid/invalid/missing_optional",
+    "state_observed_at": "首次读取时间",
+    "context_slot": "RPC返回slot",
+    "fee_in_quote": "费用明细是否已包含，不确定仍unknown"
+  },
+  "replay_diagnostics": {
+    "path_resolution": "原始逐笔/快照/OHLC及时间粒度",
+    "ambiguous_path": "true/false/unknown + reason",
+    "scenario_id": "已冻结的路径及成交假设版本",
+    "signal_available_at": "首次可见并完成计算的时间，不是蜡烛开始时间",
+    "feature_cutoff_at": "仅使用此时已可见的数据",
+    "branch_coverage": "分支触发数/核验数/未核验原因",
+    "engine_version": "引擎/依赖/规则版本与数据批次哈希"
+  },
+  "capacity_fields": {
+    "pool_type": "协议/程序版本及CPMM/CLMM/other/unknown",
+    "amount_raw": "integer string + decimals + mint + direction",
+    "capacity_evidence": "readonly_quote/pool_model/stress_assumption/unknown",
+    "state_context": "slot/observed_at/requested_at/received_at及时间一致性",
+    "fee_accounting": "费用明细及已含标志，禁止重复扣算",
+    "scenario_id": "固定金额/状态/模型版本，不与真实成交混同",
+    "counterfactual_scope": "只读无自我影响/状态仿真/unknown"
+  },
+  "holder_fields": {
+    "token_account": "代币余额账户地址",
+    "token_authority": "账户数据内owner，不是program owner",
+    "program_owner": "基础Solana账户的拥有程序",
+    "balance_raw": "整数余额/decimals/mint",
+    "snapshot_context": "observed_at/slot/commitment/decoder_version，记录跨请求偏差",
+    "holder_scope": "top20_accounts/observed_authorities/full_snapshot/unknown",
+    "classification": "verified_pool_vault/other/unknown + 证据 + 首次可见时间",
+    "denominator": "供应量或明确预登记口径 + 观测时点",
+    "coverage": "观测余额占比、未知/未观测范围，不输出伪精确全体指标"
+  },
+  "suspected_activity_fields": {
+    "intent_id": "用户兑换意图唯一标识，区别路径腿",
+    "participant_role": "wallet_authority/pool/router/unknown + 证据时点",
+    "window": "按observed_at且仅用当时已见事件",
+    "matching_basis": "token数量/USD价值、定价来源、容差、重复数和版本",
+    "paired_at": "两侧均首次可见之后，不可提前回填",
+    "classification": "suspected/unknown，不等于法律定性",
+    "coverage": "未配对/历史缺失/限流，保留原始成交和关联不确定性"
+  },
+  "transaction_evidence_fields": {
+    "signature_intent": "交易签名+意图位置，不把多跳等于多买入",
+    "execution_status": "attempted/failed/successful/unknown + 整体err与语义证据",
+    "requested_commitment": "processed/confirmed/finalized，按请求记录不猜测",
+    "evidence_events": "每次接收observed_at、slot、provider、状态升级与原始证据哈希",
+    "query_status": "found/null/timeout/rpc_error/unsupported_version/unknown",
+    "collection_gap": "重连/漏采/未补齐，禁止用最终数据伪造实时首见",
+    "simulated_action_link": "保留基于当时证据产生的模拟行动，即便后续信号失效",
+    "fees": "执行失败与实际费用证据分账，未知费用不填0"
+  },
+  "execution_cost_fields": {
+    "transaction_version": "legacy/v0/v1/unknown，决定优先费字段语义",
+    "signature_count": "基础费所需签名数及证据，不固定假定1",
+    "compute_budget": "requested_cu_limit、cu_price_micro_lamports或v1绝对费；actual_cu另存",
+    "submission_route": "standard_rpc/jito_transaction/jito_bundle/unknown",
+    "jito_tip": "lamports、条件位置及是否实际落链，和优先费分开",
+    "receipt_state": "submitted/received/landed/failed/expired/unknown，回执不等于成交",
+    "timing": "fee_estimate_at/submitted_at/received_at/landed_at及provider/slot",
+    "cost_accounting": "base/priority/tip/ATA或其他租金/DEX与token费用/滑点分项及包含标志"
+  },
+  "history_coverage_fields": {
+    "query_plan": "provider、method、address及角色、commitment、目标slot/时间范围、版本",
+    "pagination": "before/until/limit、page_index、首末signature与slot、响应哈希、resume_cursor",
+    "availability": "minimum_ledger_slot、first_available_block及各自observed_at；不能单独证明完整",
+    "probe": "已知旧signature/block、预期方法、结果/错误和首次测试时间",
+    "gap": "empty/rate_limited/timeout/pruned/method_disabled/unknown及重试证据",
+    "coverage": "目标范围、实际可证范围、未覆盖范围、候选来源与失败/停更保留",
+    "time_semantics": "blockTime/source_event_time/observed_at分开；回填不重写实时首见"
+  },
+  "quote_execution_fields": {
+    "quote_identity": "provider/API版本、request_hash、requested_at/received_at、contextSlot",
+    "amounts": "swapMode、input/output mint、raw整数、decimals、inAmount/outAmount",
+    "threshold": "slippageBps、otherAmountThreshold及构建交易内实际min-out/max-in",
+    "impact": "priceImpactPct原值和提供者定义版本；不当手续费重复扣",
+    "route": "routePlan、AMM、分配与是否ExactOut受支持",
+    "costs": "平台/DEX已含项、token扩展、网络/优先/Jito、账户租金及包含标志",
+    "lifecycle": "quote_received/transaction_built/submitted/landed/swap_success/failed/unknown",
+    "outcome": "链上token/SOL余额delta、费用证据、失败原因和模拟情景ID"
+  },
+  "account_storage_fields": {
+    "ata_identity": "wallet + token_program + mint；保存决策时是否存在及observed_at/slot",
+    "account_size": "data_len与Token-2022扩展；未知不得套用固定字节数",
+    "minimum_balance": "目标集群查询值、请求时间和上下文；不硬编码文档示例",
+    "roles": "creation_payer/fee_payer/token_owner/close_authority分开",
+    "cashflow": "create_tx_fee/locked_recoverable_lamports/close_tx_fee/refunded_lamports分账",
+    "close_state": "not_attempted/ineligible/submitted/failed/successful/unknown + token_balance + destination",
+    "strategy_horizon": "期内可用SOL、锁定余额、潜在可回收额与最终钱包delta"
+  }
+}
