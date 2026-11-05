@@ -1,0 +1,30 @@
+{
+  "name": "MEME Knowledge Base public data",
+  "version": "3.1",
+  "review_date": "2026-11-05",
+  "timezone": "Asia/Shanghai",
+  "scope": "Solana first + event research",
+  "strategy_validation": "none",
+  "delivery_scope": "data_only_no_program_updates",
+  "sha256": {
+    "CHANGELOG.md": "289419c6ba24762ee0d6fa6dc41cd57ebce4b11b0b52f7f6dbbb163cccd91c24",
+    "GUIDE.md": "907dd4bbdfbb33b04f44f123e8127e4e67c3d227c3436ed8203c07deb6bcdab7",
+    "README.md": "2b105a347f5684527d743a9e0d15e214bb065191684ab7703aafe8cffcd0c4bb",
+    "UPDATE_PROTOCOL.md": "2b95df842ecbbd3e468895d36fb301fd3b0312053a73746c682f4d4d22e9818b",
+    "core/knowledge_cards.jsonl": "6cce9478329d7dbba16a1d86b121e9817ca37e53324bbf7fc8eaadc72848c621",
+    "eval/cases.jsonl": "916c8c1d2d1cf28dfaaf25d2144be7b9b885eb6b138ad89c0759be423188dd01",
+    "evidence/discovery_queue.json": "32c14581397e9f5bd88409be758e14ca8f53c9e54d9c09d33a68f8d5d067dea8",
+    "evidence/source_registry.json": "6ae080781e3fe870acd3cc1a0555281b5b27761d1d6afa560ca1adaf7a1c0f57",
+    "history/card_versions.jsonl": "b92db247ee974e77b1cbe38931bbd6759ceba581efb96303fb1233fbf71c1802",
+    "hypotheses/experiment_specs.jsonl": "575a8a34d6fbbe7fd03bf33915e4d05d064b1348f9ff93b97cb852bfffeb8e28",
+    "integration/AGENT_PLAN.md": "3c9e8166089a440c60d635ea1528c7431d5be58fce27af329e2e3c071155d11f",
+    "integration/BACKTEST_REUSE_REVIEW.md": "7304faac64468d64d501e65a38e5544d257b47ad75e061fca13cb7934703ad2a",
+    "integration/CAPABILITY_BACKLOG.md": "471fa368e4ecdefe32e8152a28dd783443861438eb411baea32df1ff127de3c7",
+    "integration/WASH_RESEARCH_REUSE.md": "bc4036d56b00d8241bc6496976b3509090a778bc4fba9eeb790d7a94586df58a",
+    "integration/event_contract.json": "9733a7903f412138db5c409477cec211e1a8a356478c55615644157f53a342a5",
+    "integration/feature_contract.json": "6341c1f79d6ff66267c5ef6941768ea51ab9b6d5b53c1256913fb31066f08e0f",
+    "prompts/research_agent_zh.txt": "5a3c169f2f88553c5d3e077cbeb17e45f687364b4a3c34462a3c4c4add3c305f",
+    "quarantine/unsupported_claims.jsonl": "96f6852d13dea353bc649a0a70bfdc4776fcddad373e1b48652c0289fb709357",
+    "schemas/knowledge_card.schema.json": "fa9f7721505f5e01d2698b78d4de7d8a5189c57a1c08056f9bb53bea7678ea9a"
+  }
+}
