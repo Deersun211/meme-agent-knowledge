@@ -1,7 +1,7 @@
 {
-  "version": "3.1",
-  "manifest_path": "releases/3.1/knowledge/manifest.json",
-  "manifest_sha256": "4fce4b4b55054f5a5cc6610c23eeb66944cdfaaa854f5840ee459815c40bf627",
-  "updated_at": "2026-11-05",
+  "version": "3.2",
+  "manifest_path": "releases/3.2/knowledge/manifest.json",
+  "manifest_sha256": "65eed8760a82660d4b047c603dd659c6b3f80bc792d550052eec1e1ad0d15f9c",
+  "updated_at": "2026-11-06",
   "scope": "knowledge_data_only"
 }
