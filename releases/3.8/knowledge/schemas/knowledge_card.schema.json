@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MEME Knowledge Card",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "evidence_type",
+    "status",
+    "claim",
+    "scope",
+    "limitations",
+    "agent_use",
+    "falsification_or_check",
+    "source_ids",
+    "tags",
+    "profit_edge",
+    "updated_at",
+    "version"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^K[0-9]{3}$"
+    },
+    "evidence_type": {
+      "enum": [
+        "mechanism",
+        "empirical_observation",
+        "research_method",
+        "reasoned_method"
+      ]
+    },
+    "status": {
+      "enum": [
+        "active",
+        "disputed",
+        "retracted",
+        "superseded"
+      ]
+    },
+    "profit_edge": {
+      "enum": [
+        "unvalidated",
+        "validated_with_scope"
+      ]
+    },
+    "source_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    }
+  }
+}
