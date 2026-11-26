@@ -1,7 +1,7 @@
 {
-  "version": "4.0",
-  "manifest_path": "releases/4.0/knowledge/manifest.json",
-  "manifest_sha256": "2005c72f577af3a604eb9258ffabded9d26a8045eeb61f1e9064099882c41db2",
-  "updated_at": "2026-11-24T00:00:00+08:00",
+  "version": "4.1",
+  "manifest_path": "releases/4.1/knowledge/manifest.json",
+  "manifest_sha256": "cdd93e4079e9a64b194b5c4a77907753f2233badb7861df33cc119f376563dc3",
+  "updated_at": "2026-11-25T00:00:00+08:00",
   "scope": "knowledge_data_only"
 }
