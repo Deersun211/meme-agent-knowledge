@@ -1,0 +1,27 @@
+{
+  "name": "MEME Knowledge Base public data",
+  "version": "4.3",
+  "updated_at": "2026-11-27T00:00:00+08:00",
+  "delivery_scope": "data_only_no_program_updates",
+  "sha256": {
+    "CHANGELOG.md": "e565460642a71da0e92dd000a8b3cbf9cb9af4a8d588bb131904c97f0f2d2eac",
+    "GUIDE.md": "907dd4bbdfbb33b04f44f123e8127e4e67c3d227c3436ed8203c07deb6bcdab7",
+    "README.md": "f9ea7ac4b528c17daa153191b95ff9c2c0f41214894a543196dbb549f1717350",
+    "UPDATE_PROTOCOL.md": "2b95df842ecbbd3e468895d36fb301fd3b0312053a73746c682f4d4d22e9818b",
+    "core/knowledge_cards.jsonl": "f5511ea9a8d58dff899286c010c15d1dc45f34ef04bbe6e96f614ab70a1bd348",
+    "eval/cases.jsonl": "eedbba2b129fd38b0959fd0f00d5d8d764a346788cb1146832648ef8a313d7ee",
+    "evidence/discovery_queue.json": "32c14581397e9f5bd88409be758e14ca8f53c9e54d9c09d33a68f8d5d067dea8",
+    "evidence/source_registry.json": "d6a5e77a86887d440870a1a38b7fe31fd136ae2255a2d0c8c9001e35643302cf",
+    "history/card_versions.jsonl": "d2e88792c3b10ea88a3ee3962a001e248c72cf1993cf219bb0cc73917934216a",
+    "hypotheses/experiment_specs.jsonl": "658b067e59284e9d7fc9a7ffda079feef8a81237002f7170d781c0d8af423a77",
+    "integration/AGENT_PLAN.md": "3c9e8166089a440c60d635ea1528c7431d5be58fce27af329e2e3c071155d11f",
+    "integration/BACKTEST_REUSE_REVIEW.md": "7304faac64468d64d501e65a38e5544d257b47ad75e061fca13cb7934703ad2a",
+    "integration/CAPABILITY_BACKLOG.md": "bedd35689816c60cc1d5a44d46f42664d3d88eb9fa5efde228bf9502f4fd0c0f",
+    "integration/WASH_RESEARCH_REUSE.md": "bc4036d56b00d8241bc6496976b3509090a778bc4fba9eeb790d7a94586df58a",
+    "integration/event_contract.json": "9733a7903f412138db5c409477cec211e1a8a356478c55615644157f53a342a5",
+    "integration/feature_contract.json": "06e68aae10fbdf43d679b485a23c7b32e549f01e7fcfae71c37b83ae26a77b3d",
+    "prompts/research_agent_zh.txt": "5a3c169f2f88553c5d3e077cbeb17e45f687364b4a3c34462a3c4c4add3c305f",
+    "quarantine/unsupported_claims.jsonl": "659423b4f5bfe96e3f8a311b29d5eed41c72865d7d0e79665cb2a04b1b3713a6",
+    "schemas/knowledge_card.schema.json": "fa9f7721505f5e01d2698b78d4de7d8a5189c57a1c08056f9bb53bea7678ea9a"
+  }
+}
