@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "required": [
+    "event_id",
+    "source_url",
+    "source_author_id",
+    "event_type",
+    "published_at",
+    "first_observed_at",
+    "parsed_at",
+    "content_hash",
+    "verification_status",
+    "mint_candidates"
+  ],
+  "types": [
+    "kol_post",
+    "official_policy_statement",
+    "minutes",
+    "speech",
+    "political_statement",
+    "new_token_creation"
+  ],
+  "rules": [
+    "所有时间ISO8601带时区",
+    "没有唯一mint映射允许unknown",
+    "event_time不能代替first_observed_at",
+    "事后窗口变量只有可见后可用",
+    "内容或模型输出不得直接触发实盘"
+  ]
+}
